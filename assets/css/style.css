@@ -96,7 +96,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 59px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-weight: 520;
     background-color: #fff;
     color: #000;
@@ -110,18 +110,18 @@ nav .logo {
     text-transform: uppercase;
     letter-spacing: 4px;
     cursor: pointer;
-    height: 100%;
+    height: 59px;
 }
 
 nav .nav-right-container {
-    height: 58px;
+    height: 59px;
 }
 
 nav .nav-right li {
     display: inline-block;
     padding: 16px 0px;
     list-style-type: none;
-    height: 58px;
+    height: 59px;
 }
 
 .nav-right li a {
@@ -135,6 +135,12 @@ nav .nav-right li {
 nav .logo:hover, nav li:hover {
     background-color: #ccc;
     color: #000;
+}
+
+.bars-icon {
+    display: inline-block;
+    padding: 20px 16px;
+    font-size: 15px;
 }
 
 .img {
