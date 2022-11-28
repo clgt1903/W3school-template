@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+    .img {
+        padding-top: 100%;
+    }
+
+    .content-section .content-header {
+        font-size: 36px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .about {
+        margin: 16px 0;
+    }
+
+    .work-wrapper {
+        flex-direction: column;
+    }
+
+    .work-content {
+        margin: 0 8px;
+    }
+
+    .work-content .button {
+        text-align: center;
+    }
+
+    .work-desc br {
+        display: none;
+    }
+
+    .work-view {
+        padding: 32px 0;
+    }
+
+    .team-wrapper {
+        flex-direction: column;
+    }
+
+    .team-member {
+        padding: 8px 0;
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-info {
+        padding: 8px 0;
+    }
+
+    .product-img {
+        flex-basis: 100%;
+    }
+
+    .skill-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .skill-desc br {
+       display: none;
+    }
+
+    .skill {
+        flex-basis: 100%;
+    }
+
+    .signup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .signup-container {
+        padding: 8px 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and  (max-width: 1024px) {
+    .work-desc br {
+        display: none;
+    }
+
+    
+}
+
+@media (min-width: 768px) and  (max-width: 1311px) {
+    /* .work-desc br {
+        display: none;
+    } */
+    
+    .product-img {
+        flex-basis: 50%;
+    }
+
+    .team-member {
+        flex-basis: 50%;
+        padding: 8px 8px;
+    }
+
+    .skill-desc br {
+        display: none;
+    }
+
+    .about {
+        flex-basis: 49%;
+    }
+}
