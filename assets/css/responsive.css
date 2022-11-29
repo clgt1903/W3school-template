@@ -121,3 +121,14 @@
         flex-basis: 49%;
     }
 }
+
+@media (max-width: 1024px) {
+    .bars-icon {
+        display: block;
+        order: 2;
+    }
+
+    nav .nav-right {
+        display: none;
+    }
+}

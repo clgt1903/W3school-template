@@ -112,18 +112,24 @@ nav .logo a {
     text-transform: uppercase;
     letter-spacing: 4px;
     cursor: pointer;
-    height: 59px;
+    height: 58px;
+    align-self: flex-start;
+    
+}
+
+nav .nav-right {
+    order: 2;
 }
 
 nav .nav-right-container {
-    height: 59px;
+    height: 58px;
 }
 
 nav .nav-right li {
     display: inline-block;
     padding: 16px 0px;
     list-style-type: none;
-    height: 59px;
+    height: 58px;
 }
 
 .nav-right li a {
@@ -134,9 +140,13 @@ nav .nav-right li {
     padding: 20px 16px;
 }
 
-nav .logo:hover, nav li:hover {
+nav .logo:hover a, nav li:hover {
     background-color: #ccc;
     color: #000;
+}
+
+.bars-icon {
+    display: none;
 }
 
 .bars-icon a {
