@@ -12,40 +12,48 @@
 </head>
 <body>
     <div id="wrapper" class="wrapper">
-        <nav>
+        <nav id="nav" class="box-shadow">
             <div class="logo">
-                <a href="">Logo</a>
+                <a class="box-shadow" href="#wrapper">Logo</a>
             </div>
             <div class="nav-right">
                 <ul class="nav-right-container">
                     <li>
-                        <a href="">About</a>
+                        <a href="#about">About</a>
                     </li>
     
                     <li>
-                        <a href=""><i class="fa fa-user"></i> Team</a>
+                        <a href="#team"><i class="fa fa-user"></i> Team</a>
                     </li>
     
                     <li>
-                        <a href=""><i class="fa fa-th"></i> Work</a>
+                        <a href="#product"><i class="fa fa-th"></i> Work</a>
                     </li>
     
                     <li>
-                        <a href=""><i class="fa fa-usd"></i> Pricing</a>
+                        <a href="#pricing"><i class="fa fa-usd"></i> Pricing</a>
                     </li>
     
                     <li>
-                        <a href=""><i class="fa fa-envelope"></i> Contact</a>
+                        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
             </div>  
 
+            <div class="search">
+                <input type="text" class="search-input">
+                <i class="fa fa-search submit-btn"></i>
+            </div>
+
+            <div class="search-box box-shadow">
+                <i class="fa fa-search search-btn"></i> Search
+
+            </div>
+
             <div class="bars-icon">
-                <a href=""><i class="fa fa-bars"></i></a>
+                <a class="bars-menu"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
-
-        
 
         <header class="img">
             <div class="content-section">
@@ -103,7 +111,7 @@
                     <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
                         tempor incididunt ut labore et dolore.</p>
                     <div class="work-view">
-                        <a class="button" href=""><i class="fa fa-th"></i> View our works</a>
+                        <a class="button" href="#product"><i class="fa fa-th"></i> View our works</a>
                     </div>
                 </div>
                 <div class="image-wrapper">
@@ -113,14 +121,14 @@
             </div>
         </div>
 
-        <div class="team-section">
+        <div id="team" class="team-section">
             <h2 class="team-name text-center fw-500">The Team</h2>
             
             <p class="team-desc text-center">The ones who runs this company</p>
 
             <div class="team-wrapper">
                 <div class="team-member">
-                    <div class="team-card">
+                    <div class="team-card box-shadow">
                         <img src="./assets/img/team2.jpg" alt="" class="member-img">
                         
                         <div class="member-info">
@@ -195,7 +203,7 @@
             </div>
         </div>
 
-        <div class="product-wrapper">
+        <div id="product" class="product-wrapper">
             <h2 class="product-title text-center fw-500">OUR WORK</h2>
 
             <p class="product-desc text-center">What we've done for people</p>
@@ -241,7 +249,7 @@
             </div>
         </div>
 
-        <div class="signup-wrapper">
+        <div id="pricing" class="signup-wrapper">
             <h2 class="signup-title text-center fw-500">PRICING</h2>
             <p class="signup-desc text-center">Choose a pricing plan that fits your needs.</p>
 
@@ -314,7 +322,7 @@
             </div>
         </div>
 
-        <div class="contact">
+        <div id="contact" class="contact">
             <h2 class="contact-title text-center fw-500 mg-12-0">CONTACT</h2>
             <p class="contact-desc text-center mg-16-0">Lets get in touch. Send us a message:</p>
 
@@ -336,20 +344,31 @@
             </div>
             <img src="./assets/img/map.jpg" class="contact-img">
         </div>
-    </div>
 
-    <footer>
-        <a href="#home" class="back-home mg-12-0"><i class="fa fa-arrow-up"></i>  To the top</a>
-        <div class="mg-16-0">
-            <i class="fa fa-facebook-official fs-24 hover-cyan"></i>
-            <i class="fa fa-instagram fs-24 hover-cyan"></i>
-            <i class="fa fa-snapchat fs-24 hover-cyan"></i>
-            <i class="fa fa-pinterest-p fs-24 hover-cyan"></i>
-            <i class="fa fa-twitter fs-24 hover-cyan"></i>
-            <i class="fa fa-linkedin fs-24 hover-cyan"></i>
-          </div>
-          <p>Powered by <a href="#wrapper" title="Evven" target="_blank" class="powered hover-cyan">Evven</a></p>
-    </footer>
+        <footer>
+            <a href="#wrapper" class="back-home mg-12-0"><i class="fa fa-arrow-up"></i>  To the top</a>
+            <div class="mg-16-0">
+                <i class="fa fa-facebook-official fs-24 hover-cyan"></i>
+                <i class="fa fa-instagram fs-24 hover-cyan"></i>
+                <i class="fa fa-snapchat fs-24 hover-cyan"></i>
+                <i class="fa fa-pinterest-p fs-24 hover-cyan"></i>
+                <i class="fa fa-twitter fs-24 hover-cyan"></i>
+                <i class="fa fa-linkedin fs-24 hover-cyan"></i>
+              </div>
+              <p>Powered by <a href="" title="Evven" target="_blank" class="powered hover-cyan">Evven</a></p>
+        </footer>
+
+        <div class="mobile-menu">
+            <div class="menu box-shadow">
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#product">Work</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+    
     
     <script src="./assets/script/script.js"></script>
 </body>
