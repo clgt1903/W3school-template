@@ -95,7 +95,13 @@
     nav .search {
         display: none;
         position: absolute;
+        left: 100px;
         right: 64px;
+        width: calc(100% - 164px);
+    }
+
+    nav .search .search-input {
+        width: calc(100% - 84px);
     }
 
     nav .search-box {
@@ -103,27 +109,19 @@
     }
 }
 
-@media (min-width: 768px) and  (max-width: 1024px) {
+@media (min-width: 768px) and  (max-width: 1023px) {
     .work-desc br {
         display: none;
     }
     nav .search {
         display: block;
         position: absolute;
+        left: 100px;
         right: 64px;
     }
 }
 
 @media (min-width: 768px) and  (max-width: 1311px) {
-    /* .work-desc br {
-        display: none;
-    } */
-
-    nav .search .search-input {
-        width: auto;
-    }
-
-    
     .product-img {
         flex-basis: 50%;
     }
@@ -155,11 +153,13 @@
 
 @media (min-width: 1024px) {
     nav .search .search-input {
-        width: auto;
+        width: calc(100% - 84px);
     }
 
     nav .search {
-        position: unset;
+        position: absolute;
+        width: calc(100% - 612px);
+        left: 100px;
     }
 }
 

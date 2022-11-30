@@ -167,8 +167,7 @@ nav .logo:hover a, nav li:hover {
 }
 
 nav .search {
-    position: absolute;
-    right: 64px;
+    
 }
 
 nav .search .search-input {
@@ -254,12 +253,14 @@ nav .search-box:hover {
     font-size: 64px;
     font-weight: 500;
     line-height: 1.8;
+    text-shadow: 2px 2px #000;
 }
 
 .content-section .content-desc {
     font-size: 18px;
     line-height: 1.8;
     margin: 16px 0;
+    text-shadow: 2px 2px #000;
 }
 
 .content-button {
@@ -458,6 +459,7 @@ nav .search-box:hover {
 }
 
 .project-info {
+    text-align: center;
     font-size: 15px;
 }
 

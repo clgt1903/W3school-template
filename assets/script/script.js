@@ -23,7 +23,6 @@ mobileMenu.onclick = function(e) {
 
 menu.onclick = function(e) {
     e.stopPropagation()
-
 }
 
 barMenu.onclick = function(e) {
@@ -35,11 +34,11 @@ barMenu.onclick = function(e) {
 searchBox.onclick = function(e) {
     e.target.classList.add("disable")
     search.classList.add("active")
-    logo.classList.add('disable')
+    // logo.classList.add('disable')
 }
 
 submit.onclick = function(e) {
-    logo.classList.remove("disable")
+    // logo.classList.remove("disable")
     search.classList.remove("active")
     searchBox.classList.remove("disable")
 }
