@@ -706,6 +706,59 @@ footer {
     background-color: #ccc;
 }
 
+.modal-image {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: none;
+}
+
+.modal-container img {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: matrix(1.5, 0, 0, 1.5, -150, 0);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.modal-container .image-caption {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    transform: translateY(100px);
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px #000;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.modal-container .arrow-left,
+.modal-container .arrow-right {
+    position: absolute;
+    bottom: 50%;
+    font-size: 54px;
+    font-weight: 500;
+    background-color: #616161;
+    color: #ccc;
+    padding: 8px 12px;
+    transform: translateY(-100%);
+}
+
+.modal-container .arrow-left {
+    left: 0;
+}
+
+.modal-container .arrow-right {
+    right: 0;
+}
+
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -718,13 +771,13 @@ footer {
     }
 }
 
-@keyframes slideOut {
+@keyframes zoomIn {
     from {
-        opacity: 1;
-        transform: translateY(0)
+        opacity: 0;
+        display: none;
     }
     to {
-        opacity: 0;
-        transform: translateY(-400px);
+        opacity: 1;
+        display: block;
     }
 }

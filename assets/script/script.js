@@ -16,6 +16,17 @@ const searchBox = document.querySelector(".search-box")
 const projectInfo = document.querySelectorAll(".project-info")
 const infoNumber = document.querySelectorAll(".info-number")
 
+const productImage = document.querySelectorAll(".product-img")
+
+const modalImage = document.querySelector(".modal-image")
+const modalContainer = document.querySelector('.modal-container')
+const imageContent = document.querySelector('.image-content')
+const imageCaption = document.querySelector('.image-caption')
+
+const arrowLeft = document.querySelector('.arrow-left')
+const arrowRight = document.querySelector('.arrow-right')
+
+
 mobileMenu.onclick = function(e) {
     mobileMenu.classList.remove('active')
     navBar.classList.add('box-shadow')
@@ -77,3 +88,31 @@ for (let i = 0; i < infoNumber.length; i++) {
     }
 }
 
+for (let i = 0; i < productImage.length; i++) {
+    productImage[i].onclick = function(e) {
+        imageContent.src = e.target.src
+        modalImage.style.display = 'block'
+        imageCaption.innerHTML = e.target.alt
+        imageContent.style.animation = 'zoomIn linear 0.4s'
+    }
+
+}
+
+console.log(arrowLeft, arrowRight)
+
+
+modalImage.onclick = function() {
+    modalImage.style.display = 'none'
+}
+
+imageContent.onclick = function(e) {
+    e.stopPropagation()
+}
+
+arrowLeft.onclick = function(e) {
+    e.stopPropagation()
+}
+
+arrowRight.onclick = function(e) {
+    e.stopPropagation()
+}
